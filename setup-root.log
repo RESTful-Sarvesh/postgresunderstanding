@@ -1,0 +1,1997 @@
+[2018-06-27 01:51:50 PM] Using defaults from /usr/local/share/configFile
+[2018-06-27 01:51:50 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-06-27 01:51:50 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-06-27 01:51:50 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-06-27 01:51:50 PM] 
+[2018-06-27 01:51:50 PM] Choose Apigee Profile.
+[2018-06-27 01:51:50 PM] 
+[2018-06-27 01:51:50 PM]   Single machine setups:
+[2018-06-27 01:51:50 PM]     sa  = Edge Standalone (Cassandra, Zookeeper, LDAP, Management Server, UI, Router and Message Processor)
+[2018-06-27 01:51:50 PM]     sax = Analytics Standalone (Qpid and Postgres)
+[2018-06-27 01:51:50 PM]     aio = All In One (Edge and Analytics Standalone)
+[2018-06-27 01:51:50 PM]     asa = API BaaS Standalone (Cassandra, Elasticsearch, API BaaS Stack, and API BaaS Portal)
+[2018-06-27 01:51:50 PM] 
+[2018-06-27 01:51:50 PM]   Cluster node setup for zookeeper and cassandra:
+[2018-06-27 01:51:50 PM]     ds  = Datastore Cluster Node
+[2018-06-27 01:51:50 PM]     c   = Cassandra Cluster Node Only
+[2018-06-27 01:51:50 PM] 
+[2018-06-27 01:51:50 PM]   OpenLDAP setup:
+[2018-06-27 01:51:50 PM]     ld  = LDAP Node
+[2018-06-27 01:51:50 PM] 
+[2018-06-27 01:51:50 PM]   Separate components setup:
+[2018-06-27 01:51:50 PM]     ms  = Edge Management Server, UI. LDAP by default. Optionally install SSO
+[2018-06-27 01:51:50 PM]     ui  = Edge UI
+[2018-06-27 01:51:50 PM]     r   = Edge Router
+[2018-06-27 01:51:50 PM]     mp  = Edge Message Processor
+[2018-06-27 01:51:50 PM]     rmp = Edge Router and Message Processor
+[2018-06-27 01:51:50 PM]     qs  = Analytics Qpid Server
+[2018-06-27 01:51:50 PM]     ps  = Analytics Postgres Server
+[2018-06-27 01:51:50 PM]     pdb = Postgres database
+[2018-06-27 01:51:50 PM]     mo  = Monetization Server
+[2018-06-27 01:51:50 PM]     pp  = Monitoring servers
+[2018-06-27 01:51:50 PM]     dp  = DevPortal
+[2018-06-27 01:51:50 PM]     zk  = Zookeeper
+[2018-06-27 01:51:50 PM]     sso = Single Sign-On Service (SSO)
+[2018-06-27 01:51:50 PM] 
+[2018-06-27 01:51:50 PM]   API BaaS setup:
+[2018-06-27 01:51:50 PM]     e   = Elasticsearch
+[2018-06-27 01:51:50 PM]     b   = API BaaS Stack
+[2018-06-27 01:51:50 PM]     p   = API BaaS Portal
+[2018-06-27 01:51:50 PM] 
+[2018-06-27 01:51:50 PM]     eb  = Elasticsearch and API BaaS Stack
+[2018-06-27 01:51:50 PM]     ebp = Elasticsearch, API BaaS Stack, and API BaaS Portal
+[2018-06-27 01:51:50 PM] 
+[2018-06-27 01:51:50 PM] Select: 
+[2018-06-27 01:53:35 PM] Using defaults from /usr/local/share/configFile
+[2018-06-27 01:53:35 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-06-27 01:53:35 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-06-27 01:53:35 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-06-27 01:53:35 PM] setup.sh: Proceeding with HOSTIP fe80::c35c:ba22:7c1b:5e80%ens160 10.63.234.121 192.168.122.1
+[2018-06-27 01:53:35 PM] 
+Service setup apigee-postgresql
+
+Loaded plugins: langpacks, priorities, ulninfo
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30002 milliseconds')
+Trying other mirror.
+[2018-06-27 02:08:34 PM] Using defaults from /usr/local/share/configFile
+[2018-06-27 02:08:34 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-06-27 02:08:34 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-06-27 02:08:34 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-06-27 02:08:34 PM] 
+[2018-06-27 02:08:34 PM] Choose Apigee Profile.
+[2018-06-27 02:08:34 PM] 
+[2018-06-27 02:08:34 PM]   Single machine setups:
+[2018-06-27 02:08:34 PM]     sa  = Edge Standalone (Cassandra, Zookeeper, LDAP, Management Server, UI, Router and Message Processor)
+[2018-06-27 02:08:34 PM]     sax = Analytics Standalone (Qpid and Postgres)
+[2018-06-27 02:08:34 PM]     aio = All In One (Edge and Analytics Standalone)
+[2018-06-27 02:08:34 PM]     asa = API BaaS Standalone (Cassandra, Elasticsearch, API BaaS Stack, and API BaaS Portal)
+[2018-06-27 02:08:34 PM] 
+[2018-06-27 02:08:34 PM]   Cluster node setup for zookeeper and cassandra:
+[2018-06-27 02:08:34 PM]     ds  = Datastore Cluster Node
+[2018-06-27 02:08:34 PM]     c   = Cassandra Cluster Node Only
+[2018-06-27 02:08:34 PM] 
+[2018-06-27 02:08:34 PM]   OpenLDAP setup:
+[2018-06-27 02:08:34 PM]     ld  = LDAP Node
+[2018-06-27 02:08:34 PM] 
+[2018-06-27 02:08:34 PM]   Separate components setup:
+[2018-06-27 02:08:34 PM]     ms  = Edge Management Server, UI. LDAP by default. Optionally install SSO
+[2018-06-27 02:08:34 PM]     ui  = Edge UI
+[2018-06-27 02:08:34 PM]     r   = Edge Router
+[2018-06-27 02:08:34 PM]     mp  = Edge Message Processor
+[2018-06-27 02:08:34 PM]     rmp = Edge Router and Message Processor
+[2018-06-27 02:08:34 PM]     qs  = Analytics Qpid Server
+[2018-06-27 02:08:34 PM]     ps  = Analytics Postgres Server
+[2018-06-27 02:08:34 PM]     pdb = Postgres database
+[2018-06-27 02:08:34 PM]     mo  = Monetization Server
+[2018-06-27 02:08:34 PM]     pp  = Monitoring servers
+[2018-06-27 02:08:34 PM]     dp  = DevPortal
+[2018-06-27 02:08:34 PM]     zk  = Zookeeper
+[2018-06-27 02:08:34 PM]     sso = Single Sign-On Service (SSO)
+[2018-06-27 02:08:34 PM] 
+[2018-06-27 02:08:34 PM]   API BaaS setup:
+[2018-06-27 02:08:34 PM]     e   = Elasticsearch
+[2018-06-27 02:08:34 PM]     b   = API BaaS Stack
+[2018-06-27 02:08:34 PM]     p   = API BaaS Portal
+[2018-06-27 02:08:34 PM] 
+[2018-06-27 02:08:34 PM]     eb  = Elasticsearch and API BaaS Stack
+[2018-06-27 02:08:34 PM]     ebp = Elasticsearch, API BaaS Stack, and API BaaS Portal
+[2018-06-27 02:08:34 PM] 
+[2018-06-27 02:08:34 PM] Select: 
+[2018-06-27 02:08:39 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-06-27 02:08:39 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-06-27 02:08:39 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-06-27 02:08:39 PM] setup.sh: Proceeding with HOSTIP fe80::c35c:ba22:7c1b:5e80%ens160 10.63.234.121 192.168.122.1
+[2018-06-27 02:08:39 PM] 
+Service setup apigee-postgresql
+
+Loaded plugins: langpacks, priorities, ulninfo
+Existing lock /var/run/yum.pid: another copy is running as pid 9402.
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: yum
+    Memory :  32 M RSS (425 MB VSZ)
+    Started: Wed Jun 27 13:53:35 2018 - 15:04 ago
+    State  : Sleeping, pid: 9402
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: yum
+    Memory :  32 M RSS (425 MB VSZ)
+    Started: Wed Jun 27 13:53:35 2018 - 15:06 ago
+    State  : Sleeping, pid: 9402
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: yum
+    Memory :  32 M RSS (425 MB VSZ)
+    Started: Wed Jun 27 13:53:35 2018 - 15:08 ago
+    State  : Sleeping, pid: 9402
+[2018-06-27 02:09:39 PM] Using defaults from /usr/local/share/configFile
+[2018-06-27 02:09:39 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-06-27 02:09:39 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-06-27 02:09:39 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-06-27 02:09:39 PM] setup.sh: Proceeding with HOSTIP fe80::c35c:ba22:7c1b:5e80%ens160 10.63.234.121 192.168.122.1
+[2018-06-27 02:09:39 PM] 
+Service setup apigee-postgresql
+
+Loaded plugins: langpacks, priorities, ulninfo
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+[2018-06-27 07:08:27 PM] Using defaults from /usr/local/share/configFile
+[2018-06-27 07:08:27 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-06-27 07:08:27 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-06-27 07:08:27 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-06-27 07:08:27 PM] setup.sh: Proceeding with HOSTIP fe80::c35c:ba22:7c1b:5e80%ens160 10.63.234.121 192.168.122.1
+[2018-06-27 07:08:27 PM] 
+Service setup apigee-postgresql
+
+Loaded plugins: langpacks, priorities, ulninfo
+165 packages excluded due to repository priority protections
+Resolving Dependencies
+--> Running transaction check
+---> Package apigee-postgresql.noarch 0:9.6.1-0.0.1132 will be installed
+--> Processing Dependency: postgresql96-server >= 9.6 for package: apigee-postgresql-9.6.1-0.0.1132.noarch
+--> Processing Dependency: postgresql96-contrib >= 9.6 for package: apigee-postgresql-9.6.1-0.0.1132.noarch
+--> Processing Dependency: postgresql96 >= 9.6 for package: apigee-postgresql-9.6.1-0.0.1132.noarch
+--> Running transaction check
+---> Package postgresql96.x86_64 0:9.6.1-1PGDG.rhel7 will be installed
+--> Processing Dependency: postgresql96-libs(x86-64) = 9.6.1-1PGDG.rhel7 for package: postgresql96-9.6.1-1PGDG.rhel7.x86_64
+--> Processing Dependency: libpq.so.5()(64bit) for package: postgresql96-9.6.1-1PGDG.rhel7.x86_64
+---> Package postgresql96-contrib.x86_64 0:9.6.1-1PGDG.rhel7 will be installed
+---> Package postgresql96-server.x86_64 0:9.6.1-1PGDG.rhel7 will be installed
+--> Running transaction check
+---> Package postgresql96-libs.x86_64 0:9.6.1-1PGDG.rhel7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                Arch     Version              Repository           Size
+================================================================================
+Installing:
+ apigee-postgresql      noarch   9.6.1-0.0.1132       apigee-release       33 k
+Installing for dependencies:
+ postgresql96           x86_64   9.6.1-1PGDG.rhel7    apigee-thirdparty   1.3 M
+ postgresql96-contrib   x86_64   9.6.1-1PGDG.rhel7    apigee-thirdparty   561 k
+ postgresql96-libs      x86_64   9.6.1-1PGDG.rhel7    apigee-thirdparty   308 k
+ postgresql96-server    x86_64   9.6.1-1PGDG.rhel7    apigee-thirdparty   4.2 M
+
+Transaction Summary
+================================================================================
+Install  1 Package (+4 Dependent packages)
+
+Total download size: 6.4 M
+Installed size: 27 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              322 kB/s | 6.4 MB  00:20     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : postgresql96-libs-9.6.1-1PGDG.rhel7.x86_64                   1/5 
+  Installing : postgresql96-9.6.1-1PGDG.rhel7.x86_64                        2/5 
+  Installing : postgresql96-server-9.6.1-1PGDG.rhel7.x86_64                 3/5 
+  Installing : postgresql96-contrib-9.6.1-1PGDG.rhel7.x86_64                4/5 
+  Installing : apigee-postgresql-9.6.1-0.0.1132.noarch                      5/5 
+
+Adapting/adding kernel parameters
+kernel.sem = 500 32000 32 1024
+kernel.shmmax = 68719476736
+kernel.shmall = 4294967296
+  Verifying  : postgresql96-server-9.6.1-1PGDG.rhel7.x86_64                 1/5 
+  Verifying  : postgresql96-libs-9.6.1-1PGDG.rhel7.x86_64                   2/5 
+  Verifying  : apigee-postgresql-9.6.1-0.0.1132.noarch                      3/5 
+  Verifying  : postgresql96-contrib-9.6.1-1PGDG.rhel7.x86_64                4/5 
+  Verifying  : postgresql96-9.6.1-1PGDG.rhel7.x86_64                        5/5 
+
+Installed:
+  apigee-postgresql.noarch 0:9.6.1-0.0.1132                                     
+
+Dependency Installed:
+  postgresql96.x86_64 0:9.6.1-1PGDG.rhel7                                       
+  postgresql96-contrib.x86_64 0:9.6.1-1PGDG.rhel7                               
+  postgresql96-libs.x86_64 0:9.6.1-1PGDG.rhel7                                  
+  postgresql96-server.x86_64 0:9.6.1-1PGDG.rhel7                                
+
+Complete!
+apigee-service: apigee-postgresql: Not running (NO_PIDFILE)
+apigee-configutil: apigee-postgresql: # OK
+apigee-service: apigee-postgresql: Not running (NO_LOCKFILE)
+apigee-service: apigee-postgresql: status=2, continuing
+apigee-service: apigee-postgresql: Not running (DEAD)
+apigee-service: apigee-postgresql: status=3, continuing
+apigee-service: apigee-postgresql: Not running (DEAD)
+apigee-service: apigee-postgresql: apigee-postgresql is dead
+[2018-06-27 07:08:57 PM] Error: setup.sh: /opt/apigee/apigee-service/bin/apigee-service exited with unexpected status 3
+[2018-06-27 07:45:24 PM] Using defaults from /usr/local/share/configFile
+[2018-06-27 07:45:24 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-06-27 07:45:24 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-06-27 07:45:24 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-06-27 07:45:24 PM] setup.sh: Proceeding with HOSTIP fe80::c35c:ba22:7c1b:5e80%ens160 10.63.234.121 192.168.122.1
+[2018-06-27 07:45:24 PM] 
+Service setup apigee-postgresql
+
+Loaded plugins: langpacks, priorities, ulninfo
+165 packages excluded due to repository priority protections
+No packages marked for update
+apigee-service: apigee-postgresql: Not running (DEAD)
+apigee-configutil: apigee-postgresql: # OK
+apigee-service: apigee-postgresql: Not running (NO_PIDFILE)
+apigee-service: apigee-postgresql: status=1, continuing
+apigee-service: apigee-postgresql: Not running (DEAD)
+apigee-service: apigee-postgresql: status=3, continuing
+apigee-service: apigee-postgresql: Not running (DEAD)
+apigee-service: apigee-postgresql: apigee-postgresql is dead
+[2018-06-27 07:45:31 PM] Error: setup.sh: /opt/apigee/apigee-service/bin/apigee-service exited with unexpected status 3
+[2018-06-27 07:45:42 PM] Using defaults from /usr/local/share/configFile
+[2018-06-27 07:45:42 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-06-27 07:45:42 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-06-27 07:45:42 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-06-27 07:45:42 PM] setup.sh: Proceeding with HOSTIP fe80::c35c:ba22:7c1b:5e80%ens160 10.63.234.121 192.168.122.1
+[2018-06-27 07:45:42 PM] 
+Service setup apigee-postgresql
+
+Loaded plugins: langpacks, priorities, ulninfo
+165 packages excluded due to repository priority protections
+No packages marked for update
+apigee-service: apigee-postgresql: Not running (DEAD)
+apigee-configutil: apigee-postgresql: # OK
+apigee-service: apigee-postgresql: Not running (NO_LOCKFILE)
+apigee-service: apigee-postgresql: status=2, continuing
+apigee-service: apigee-postgresql: Not running (DEAD)
+apigee-service: apigee-postgresql: status=3, continuing
+apigee-service: apigee-postgresql: Not running (DEAD)
+apigee-service: apigee-postgresql: apigee-postgresql is dead
+[2018-06-27 07:45:48 PM] Error: setup.sh: /opt/apigee/apigee-service/bin/apigee-service exited with unexpected status 3
+[2018-06-27 07:47:09 PM] Using defaults from /usr/local/share/configFile
+[2018-06-27 07:47:09 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-06-27 07:47:09 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-06-27 07:47:09 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-06-27 07:47:09 PM] setup.sh: Proceeding with HOSTIP fe80::c35c:ba22:7c1b:5e80%ens160 10.63.234.121 192.168.122.1
+[2018-06-27 07:47:09 PM] 
+Service setup apigee-postgresql
+
+Loaded plugins: langpacks, priorities, ulninfo
+165 packages excluded due to repository priority protections
+No packages marked for update
+apigee-service: apigee-postgresql: Not running (DEAD)
+apigee-configutil: apigee-postgresql: # OK
+apigee-service: apigee-postgresql: Not running (NO_LOCKFILE)
+apigee-service: apigee-postgresql: status=2, continuing
+apigee-service: apigee-postgresql: Not running (DEAD)
+apigee-service: apigee-postgresql: status=3, continuing
+apigee-service: apigee-postgresql: Not running (DEAD)
+apigee-service: apigee-postgresql: apigee-postgresql is dead
+[2018-06-27 07:47:16 PM] Error: setup.sh: /opt/apigee/apigee-service/bin/apigee-service exited with unexpected status 3
+[2018-06-27 08:12:28 PM] Using defaults from /usr/local/share/configFile
+[2018-06-27 08:12:28 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-06-27 08:12:28 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-06-27 08:12:28 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-06-27 08:12:28 PM] setup.sh: Proceeding with HOSTIP fe80::c35c:ba22:7c1b:5e80%ens160 10.63.234.121 192.168.122.1
+[2018-06-27 08:12:28 PM] 
+Service setup apigee-postgresql
+
+Loaded plugins: langpacks, priorities, ulninfo
+165 packages excluded due to repository priority protections
+No packages marked for update
+apigee-service: apigee-postgresql: Not running (DEAD)
+apigee-configutil: apigee-postgresql: # OK
+apigee-service: apigee-postgresql: Not running (NO_PIDFILE)
+apigee-service: apigee-postgresql: status=1, continuing
+apigee-service: apigee-postgresql: Not running (DEAD)
+apigee-service: apigee-postgresql: status=3, continuing
+apigee-service: apigee-postgresql: Not running (DEAD)
+apigee-service: apigee-postgresql: apigee-postgresql is dead
+[2018-06-27 08:12:34 PM] Error: setup.sh: /opt/apigee/apigee-service/bin/apigee-service exited with unexpected status 3
+[2018-06-28 04:35:02 PM] Using defaults from /usr/local/share/configFile
+[2018-06-28 04:35:02 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-06-28 04:35:02 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-06-28 04:35:02 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-06-28 04:35:02 PM] setup.sh: Proceeding with HOSTIP fe80::c35c:ba22:7c1b:5e80%ens160 10.63.234.121 192.168.122.1
+[2018-06-28 04:35:02 PM] 
+Service setup apigee-postgresql
+
+Loaded plugins: langpacks, priorities, ulninfo
+165 packages excluded due to repository priority protections
+No packages marked for update
+apigee-service: apigee-postgresql: Not running (DEAD)
+apigee-configutil: apigee-postgresql: # OK
+apigee-service: apigee-postgresql: Not running (NO_PIDFILE)
+apigee-service: apigee-postgresql: status=1, continuing
+apigee-service: apigee-postgresql: Not running (DEAD)
+apigee-service: apigee-postgresql: status=3, continuing
+apigee-service: apigee-postgresql: Not running (DEAD)
+apigee-service: apigee-postgresql: apigee-postgresql is dead
+[2018-06-28 04:35:09 PM] Error: setup.sh: /opt/apigee/apigee-service/bin/apigee-service exited with unexpected status 3
+[2018-06-29 02:30:56 PM] Using defaults from /usr/local/share/configFile
+[2018-06-29 02:30:56 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-06-29 02:30:56 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-06-29 02:30:56 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-06-29 02:30:56 PM] setup.sh: Proceeding with HOSTIP fe80::c35c:ba22:7c1b:5e80%ens160 10.63.234.121 192.168.122.1
+[2018-06-29 02:30:56 PM] 
+Service setup apigee-postgresql
+
+Loaded plugins: langpacks, priorities, ulninfo
+http://del-repos.extreme-ix.org/epel/7/x86_64/repodata/repomd.xml: [Errno -1] repomd.xml does not match metalink for epel
+Trying other mirror.
+http://ftp.kddilabs.jp/Linux/packages/fedora/epel/7/x86_64/repodata/repomd.xml: [Errno -1] repomd.xml does not match metalink for epel
+Trying other mirror.
+165 packages excluded due to repository priority protections
+No packages marked for update
+apigee-service: apigee-postgresql: Not running (DEAD)
+apigee-configutil: apigee-postgresql: # OK
+apigee-service: apigee-postgresql: Not running (NO_PIDFILE)
+apigee-service: apigee-postgresql: status=1, continuing
+apigee-service: apigee-postgresql: Not running (DEAD)
+apigee-service: apigee-postgresql: status=3, continuing
+apigee-service: apigee-postgresql: Not running (DEAD)
+apigee-service: apigee-postgresql: apigee-postgresql is dead
+[2018-06-29 02:35:41 PM] Error: setup.sh: /opt/apigee/apigee-service/bin/apigee-service exited with unexpected status 3
+[2018-06-29 02:58:58 PM] Using defaults from /usr/local/share/configFile
+[2018-06-29 02:58:58 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-06-29 02:58:58 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-06-29 02:58:58 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-06-29 02:58:58 PM] 
+[2018-06-29 02:58:58 PM] Choose Apigee Profile.
+[2018-06-29 02:58:58 PM] 
+[2018-06-29 02:58:58 PM]   Single machine setups:
+[2018-06-29 02:58:58 PM]     sa  = Edge Standalone (Cassandra, Zookeeper, LDAP, Management Server, UI, Router and Message Processor)
+[2018-06-29 02:58:58 PM]     sax = Analytics Standalone (Qpid and Postgres)
+[2018-06-29 02:58:58 PM]     aio = All In One (Edge and Analytics Standalone)
+[2018-06-29 02:58:58 PM]     asa = API BaaS Standalone (Cassandra, Elasticsearch, API BaaS Stack, and API BaaS Portal)
+[2018-06-29 02:58:58 PM] 
+[2018-06-29 02:58:58 PM]   Cluster node setup for zookeeper and cassandra:
+[2018-06-29 02:58:58 PM]     ds  = Datastore Cluster Node
+[2018-06-29 02:58:58 PM]     c   = Cassandra Cluster Node Only
+[2018-06-29 02:58:58 PM] 
+[2018-06-29 02:58:58 PM]   OpenLDAP setup:
+[2018-06-29 02:58:58 PM]     ld  = LDAP Node
+[2018-06-29 02:58:58 PM] 
+[2018-06-29 02:58:58 PM]   Separate components setup:
+[2018-06-29 02:58:58 PM]     ms  = Edge Management Server, UI. LDAP by default. Optionally install SSO
+[2018-06-29 02:58:58 PM]     ui  = Edge UI
+[2018-06-29 02:58:58 PM]     r   = Edge Router
+[2018-06-29 02:58:58 PM]     mp  = Edge Message Processor
+[2018-06-29 02:58:58 PM]     rmp = Edge Router and Message Processor
+[2018-06-29 02:58:58 PM]     qs  = Analytics Qpid Server
+[2018-06-29 02:58:58 PM]     ps  = Analytics Postgres Server
+[2018-06-29 02:58:58 PM]     pdb = Postgres database
+[2018-06-29 02:58:58 PM]     mo  = Monetization Server
+[2018-06-29 02:58:58 PM]     pp  = Monitoring servers
+[2018-06-29 02:58:58 PM]     dp  = DevPortal
+[2018-06-29 02:58:58 PM]     zk  = Zookeeper
+[2018-06-29 02:58:58 PM]     sso = Single Sign-On Service (SSO)
+[2018-06-29 02:58:58 PM] 
+[2018-06-29 02:58:58 PM]   API BaaS setup:
+[2018-06-29 02:58:58 PM]     e   = Elasticsearch
+[2018-06-29 02:58:58 PM]     b   = API BaaS Stack
+[2018-06-29 02:58:58 PM]     p   = API BaaS Portal
+[2018-06-29 02:58:58 PM] 
+[2018-06-29 02:58:58 PM]     eb  = Elasticsearch and API BaaS Stack
+[2018-06-29 02:58:58 PM]     ebp = Elasticsearch, API BaaS Stack, and API BaaS Portal
+[2018-06-29 02:58:58 PM] 
+[2018-06-29 02:58:58 PM] Select: 
+[2018-06-29 02:59:10 PM] Using defaults from /usr/local/share/configFile
+[2018-06-29 02:59:10 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-06-29 02:59:10 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-06-29 02:59:10 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-06-29 02:59:10 PM] setup.sh: Proceeding with HOSTIP fe80::c35c:ba22:7c1b:5e80%ens160 10.63.234.121 192.168.122.1
+[2018-06-29 02:59:10 PM] 
+Service setup apigee-postgresql
+
+Loaded plugins: langpacks, priorities, ulninfo
+165 packages excluded due to repository priority protections
+No packages marked for update
+apigee-service: apigee-postgresql: Not running (DEAD)
+apigee-configutil: apigee-postgresql: # OK
+apigee-service: apigee-postgresql: Not running (NO_PIDFILE)
+apigee-service: apigee-postgresql: status=1, continuing
+apigee-service: apigee-postgresql: Not running (DEAD)
+apigee-service: apigee-postgresql: status=3, continuing
+apigee-service: apigee-postgresql: Not running (DEAD)
+apigee-service: apigee-postgresql: apigee-postgresql is dead
+[2018-06-29 02:59:16 PM] Error: setup.sh: /opt/apigee/apigee-service/bin/apigee-service exited with unexpected status 3
+[2018-06-29 03:10:27 PM] Usage: setup.sh [ -h | -p profile -f <filename> ] | -p profile -f <filename> -t
+[2018-06-29 03:10:27 PM]   -f CONFIG   : Use defaults from CONFIG file
+[2018-06-29 03:10:27 PM]   -h          : Display usage information
+[2018-06-29 03:10:27 PM]   -t          : Test if system requirements are met without proceeding to install profile
+[2018-06-29 03:10:27 PM]   -p PROFILE  : Use the named PROFILE
+[2018-06-29 03:10:27 PM] 
+[2018-06-29 03:10:27 PM] Available Profiles:
+[2018-06-29 03:10:27 PM]   Single machine setups:
+[2018-06-29 03:10:27 PM]     sa  = Edge Standalone (Cassandra, Zookeeper, LDAP, Management Server, UI, Router and Message Processor)
+[2018-06-29 03:10:27 PM]     sax = Analytics Standalone (Qpid and Postgres)
+[2018-06-29 03:10:27 PM]     aio = All In One (Edge and Analytics Standalone)
+[2018-06-29 03:10:27 PM]     asa = API BaaS Standalone (Cassandra, Elasticsearch, API BaaS Stack, and API BaaS Portal)
+[2018-06-29 03:10:27 PM] 
+[2018-06-29 03:10:27 PM]   Cluster node setup for zookeeper and cassandra:
+[2018-06-29 03:10:27 PM]     ds  = Datastore Cluster Node
+[2018-06-29 03:10:27 PM]     c   = Cassandra Cluster Node Only
+[2018-06-29 03:10:27 PM] 
+[2018-06-29 03:10:27 PM]   OpenLDAP setup:
+[2018-06-29 03:10:27 PM]     ld  = LDAP Node
+[2018-06-29 03:10:27 PM] 
+[2018-06-29 03:10:27 PM]   Separate components setup:
+[2018-06-29 03:10:27 PM]     ms  = Edge Management Server, UI. LDAP by default. Optionally install SSO
+[2018-06-29 03:10:27 PM]     ui  = Edge UI
+[2018-06-29 03:10:27 PM]     r   = Edge Router
+[2018-06-29 03:10:27 PM]     mp  = Edge Message Processor
+[2018-06-29 03:10:27 PM]     rmp = Edge Router and Message Processor
+[2018-06-29 03:10:27 PM]     qs  = Analytics Qpid Server
+[2018-06-29 03:10:27 PM]     ps  = Analytics Postgres Server
+[2018-06-29 03:10:27 PM]     pdb = Postgres database
+[2018-06-29 03:10:27 PM]     mo  = Monetization Server
+[2018-06-29 03:10:27 PM]     pp  = Monitoring servers
+[2018-06-29 03:10:27 PM]     dp  = DevPortal
+[2018-06-29 03:10:27 PM]     zk  = Zookeeper
+[2018-06-29 03:10:27 PM]     sso = Single Sign-On Service (SSO)
+[2018-06-29 03:10:27 PM] 
+[2018-06-29 03:10:27 PM]   API BaaS setup:
+[2018-06-29 03:10:27 PM]     e   = Elasticsearch
+[2018-06-29 03:10:27 PM]     b   = API BaaS Stack
+[2018-06-29 03:10:27 PM]     p   = API BaaS Portal
+[2018-06-29 03:10:27 PM] 
+[2018-06-29 03:10:27 PM]     eb  = Elasticsearch and API BaaS Stack
+[2018-06-29 03:10:27 PM]     ebp = Elasticsearch, API BaaS Stack, and API BaaS Portal
+[2018-06-29 03:10:27 PM] 
+[2018-06-29 03:10:34 PM] Usage: setup.sh [ -h | -p profile -f <filename> ] | -p profile -f <filename> -t
+[2018-06-29 03:10:34 PM]   -f CONFIG   : Use defaults from CONFIG file
+[2018-06-29 03:10:34 PM]   -h          : Display usage information
+[2018-06-29 03:10:34 PM]   -t          : Test if system requirements are met without proceeding to install profile
+[2018-06-29 03:10:34 PM]   -p PROFILE  : Use the named PROFILE
+[2018-06-29 03:10:34 PM] 
+[2018-06-29 03:10:34 PM] Available Profiles:
+[2018-06-29 03:10:34 PM]   Single machine setups:
+[2018-06-29 03:10:34 PM]     sa  = Edge Standalone (Cassandra, Zookeeper, LDAP, Management Server, UI, Router and Message Processor)
+[2018-06-29 03:10:34 PM]     sax = Analytics Standalone (Qpid and Postgres)
+[2018-06-29 03:10:34 PM]     aio = All In One (Edge and Analytics Standalone)
+[2018-06-29 03:10:34 PM]     asa = API BaaS Standalone (Cassandra, Elasticsearch, API BaaS Stack, and API BaaS Portal)
+[2018-06-29 03:10:34 PM] 
+[2018-06-29 03:10:34 PM]   Cluster node setup for zookeeper and cassandra:
+[2018-06-29 03:10:34 PM]     ds  = Datastore Cluster Node
+[2018-06-29 03:10:34 PM]     c   = Cassandra Cluster Node Only
+[2018-06-29 03:10:34 PM] 
+[2018-06-29 03:10:34 PM]   OpenLDAP setup:
+[2018-06-29 03:10:34 PM]     ld  = LDAP Node
+[2018-06-29 03:10:34 PM] 
+[2018-06-29 03:10:34 PM]   Separate components setup:
+[2018-06-29 03:10:34 PM]     ms  = Edge Management Server, UI. LDAP by default. Optionally install SSO
+[2018-06-29 03:10:34 PM]     ui  = Edge UI
+[2018-06-29 03:10:34 PM]     r   = Edge Router
+[2018-06-29 03:10:34 PM]     mp  = Edge Message Processor
+[2018-06-29 03:10:34 PM]     rmp = Edge Router and Message Processor
+[2018-06-29 03:10:34 PM]     qs  = Analytics Qpid Server
+[2018-06-29 03:10:34 PM]     ps  = Analytics Postgres Server
+[2018-06-29 03:10:34 PM]     pdb = Postgres database
+[2018-06-29 03:10:34 PM]     mo  = Monetization Server
+[2018-06-29 03:10:34 PM]     pp  = Monitoring servers
+[2018-06-29 03:10:34 PM]     dp  = DevPortal
+[2018-06-29 03:10:34 PM]     zk  = Zookeeper
+[2018-06-29 03:10:34 PM]     sso = Single Sign-On Service (SSO)
+[2018-06-29 03:10:34 PM] 
+[2018-06-29 03:10:34 PM]   API BaaS setup:
+[2018-06-29 03:10:34 PM]     e   = Elasticsearch
+[2018-06-29 03:10:34 PM]     b   = API BaaS Stack
+[2018-06-29 03:10:34 PM]     p   = API BaaS Portal
+[2018-06-29 03:10:34 PM] 
+[2018-06-29 03:10:34 PM]     eb  = Elasticsearch and API BaaS Stack
+[2018-06-29 03:10:34 PM]     ebp = Elasticsearch, API BaaS Stack, and API BaaS Portal
+[2018-06-29 03:10:34 PM] 
+[2018-06-29 03:11:23 PM] Using defaults from /usr/local/share/configFile
+[2018-06-29 03:11:23 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-06-29 03:11:23 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-06-29 03:11:23 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-06-29 03:14:31 PM] Using defaults from /usr/local/share/configFile
+[2018-06-29 03:14:31 PM] setup.sh: Error: Profile 'pdb' requires [8] cores. Available: [2] cores
+[2018-06-29 03:14:31 PM] setup.sh: Error: Profile 'pdb' requires [16GB] memory. Available: [3GB] memory
+[2018-06-29 03:31:11 PM] Using defaults from /usr/local/share/postgresConfigfile
+[2018-06-29 03:31:11 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-06-29 03:31:11 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-06-29 03:31:11 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-06-29 03:31:11 PM] 
+[2018-06-29 03:31:11 PM] 0) 10.63.234.121
+[2018-06-29 03:31:11 PM] 1) 192.168.122.1
+[2018-06-29 03:31:11 PM] Select an IP address to use for this host: 
+[2018-06-29 03:31:17 PM] 10.63.234.121
+[2018-06-29 03:31:17 PM] setup.sh: Proceeding with HOSTIP 10.63.234.121
+[2018-06-29 03:31:17 PM] 
+Service setup apigee-postgresql
+
+Loaded plugins: langpacks, priorities, ulninfo
+165 packages excluded due to repository priority protections
+No packages marked for update
+/software/apigee/apigee-lib/apigee-lib.sh: line 943: ?HOSTIP=fe80::c35c:ba22:7c1b:5e80%ens160: command not found
+Validating setup variables
+/usr/local/share/postgresConfigfile: line 7: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 9: ?HOSTIP=fe80::c35c:ba22:7c1b:5e80%ens160: command not found
+/usr/local/share/postgresConfigfile: line 10: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 13: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 16: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 20: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 23: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 26: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 29: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 32: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 33: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 40: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 45: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 48: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 52: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 53: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 58: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 62: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 63: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 64: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 70: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 71: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 75: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 81: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 82: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 87: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 92: $'\r': command not found
+Checking for required variables
+Checking required variable HOSTIP...OK
+Checking required variable RUN_USER...OK
+Checking required variable RUN_GROUP...OK
+
+Checking for optional variables
+apigee-service: apigee-postgresql: Not running (DEAD)
+Missing PG_MASTER, assuming stand-alone.
+Initializing database: Creating directory /software/apigee/data/apigee-postgresql/pgdata
+[OK]
+
+Creating symlinks for config files
+Restarting apigee-postgresql
+apigee-service: apigee-postgresql: Not running (DEAD)
+apigee-configutil: apigee-postgresql: # OK
+apigee-service: apigee-postgresql: Not running (NO_PIDFILE)
+apigee-service: apigee-postgresql: status=1, continuing
+apigee-service: apigee-postgresql: OK
+apigee-service: apigee-postgresql: apigee-postgresql is running
+Waiting for postgres to finish start
+
+postgres successfully started
+ALTER ROLE
+CREATE DATABASE
+CREATE ROLE
+GRANT
+GRANT
+You are now connected to database "apigee" as user "apigee".
+ALTER DEFAULT PRIVILEGES
+CREATE SCHEMA
+ALTER DEFAULT PRIVILEGES
+GRANT
+                                List of databases
+   Name    | Owner  | Encoding |   Collate   |    Ctype    |  Access privileges  
+-----------+--------+----------+-------------+-------------+---------------------
+ apigee    | apigee | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =Tc/apigee         +
+           |        |          |             |             | apigee=CTc/apigee  +
+           |        |          |             |             | postgres=CTc/apigee
+ postgres  | apigee | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ template0 | apigee | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/apigee          +
+           |        |          |             |             | apigee=CTc/apigee
+ template1 | apigee | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/apigee          +
+           |        |          |             |             | apigee=CTc/apigee
+(4 rows)
+
+apigee-service: apigee-postgresql: OK
+apigee-configutil: apigee-postgresql: # OK
+apigee-service: apigee-postgresql: Not running (NO_LOCKFILE)
+apigee-service: apigee-postgresql: status=2, continuing
+apigee-service: apigee-postgresql: OK
+apigee-service: apigee-postgresql: apigee-postgresql is running
+Waiting for postgres to finish start
+
+postgres successfully started
+[2018-06-29 03:31:28 PM] 
+Finished apigee-postgresql setup
+
+[2018-06-29 03:31:28 PM] 
+[2018-06-29 03:31:28 PM] Finished Setup
+[2018-06-29 03:31:28 PM] 
+[2018-06-29 03:31:28 PM] Refer the documentation for provisioning instructions.
+[2018-06-29 03:31:28 PM] Setup wrote to log file: /tmp/setup-root.log
+[2018-06-29 04:01:32 PM] Using defaults from /usr/local/share/devportalConfigFile
+[2018-06-29 04:01:32 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-06-29 04:01:32 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-06-29 04:01:32 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-06-29 04:01:32 PM] setup.sh: Proceeding with HOSTIP fe80::c35c:ba22:7c1b:5e80%ens160 10.63.234.121 192.168.122.1
+[2018-06-29 04:01:32 PM] 
+Service setup apigee-drupal-devportal
+
+Loaded plugins: langpacks, priorities, ulninfo
+165 packages excluded due to repository priority protections
+Resolving Dependencies
+--> Running transaction check
+---> Package apigee-drupal-devportal.noarch 0:4.18.01-0.0.262 will be installed
+--> Processing Dependency: apigee-drush >= 8.1.11 for package: apigee-drupal-devportal-4.18.01-0.0.262.noarch
+--> Processing Dependency: apigee-drupal-contrib >= 4.17.05 for package: apigee-drupal-devportal-4.18.01-0.0.262.noarch
+--> Processing Dependency: apigee-drupal >= 7.54 for package: apigee-drupal-devportal-4.18.01-0.0.262.noarch
+--> Processing Dependency: postgresql94 for package: apigee-drupal-devportal-4.18.01-0.0.262.noarch
+--> Running transaction check
+---> Package apigee-drupal.noarch 0:7.56-0.0.83 will be installed
+--> Processing Dependency: apigee-php for package: apigee-drupal-7.56-0.0.83.noarch
+--> Processing Dependency: apigee-lb for package: apigee-drupal-7.56-0.0.83.noarch
+---> Package apigee-drupal-contrib.noarch 0:4.18.01-0.0.165 will be installed
+---> Package apigee-drush.noarch 0:8.1.11-0.0.75 will be installed
+---> Package postgresql94.x86_64 0:9.4.14-1PGDG.rhel7 will be installed
+--> Processing Dependency: postgresql94-libs = 9.4.14-1PGDG.rhel7 for package: postgresql94-9.4.14-1PGDG.rhel7.x86_64
+--> Running transaction check
+---> Package apigee-lb.noarch 0:4.18.01-0.0.601 will be installed
+--> Processing Dependency: lua-socket for package: apigee-lb-4.18.01-0.0.601.noarch
+--> Processing Dependency: lua-cjson for package: apigee-lb-4.18.01-0.0.601.noarch
+--> Processing Dependency: lua-luaffifb for package: apigee-lb-4.18.01-0.0.601.noarch
+---> Package apigee-php.noarch 0:4.18.01-0.0.49 will be installed
+--> Processing Dependency: php70u-xml for package: apigee-php-4.18.01-0.0.49.noarch
+--> Processing Dependency: php70u-process for package: apigee-php-4.18.01-0.0.49.noarch
+--> Processing Dependency: php70u-pgsql for package: apigee-php-4.18.01-0.0.49.noarch
+--> Processing Dependency: php70u-pdo for package: apigee-php-4.18.01-0.0.49.noarch
+--> Processing Dependency: php70u-mysqlnd for package: apigee-php-4.18.01-0.0.49.noarch
+--> Processing Dependency: php70u-mbstring for package: apigee-php-4.18.01-0.0.49.noarch
+--> Processing Dependency: php70u-ldap for package: apigee-php-4.18.01-0.0.49.noarch
+--> Processing Dependency: php70u-json for package: apigee-php-4.18.01-0.0.49.noarch
+--> Processing Dependency: php70u-gd for package: apigee-php-4.18.01-0.0.49.noarch
+--> Processing Dependency: php70u-fpm for package: apigee-php-4.18.01-0.0.49.noarch
+--> Processing Dependency: php70u-common for package: apigee-php-4.18.01-0.0.49.noarch
+--> Processing Dependency: php70u-cli for package: apigee-php-4.18.01-0.0.49.noarch
+---> Package postgresql94-libs.x86_64 0:9.4.14-1PGDG.rhel7 will be installed
+--> Running transaction check
+---> Package lua-cjson.x86_64 0:2.1.0-1.el6 will be installed
+---> Package lua-luaffifb.x86_64 0:0.9-1.el6 will be installed
+---> Package lua-socket.x86_64 0:3.0-0.10.rc1.el6 will be installed
+---> Package php70u-cli.x86_64 0:7.0.29-1.ius.centos7 will be installed
+---> Package php70u-common.x86_64 0:7.0.29-1.ius.centos7 will be installed
+---> Package php70u-fpm.x86_64 0:7.0.29-1.ius.centos7 will be installed
+---> Package php70u-gd.x86_64 0:7.0.29-1.ius.centos7 will be installed
+---> Package php70u-json.x86_64 0:7.0.29-1.ius.centos7 will be installed
+---> Package php70u-ldap.x86_64 0:7.0.29-1.ius.centos7 will be installed
+---> Package php70u-mbstring.x86_64 0:7.0.29-1.ius.centos7 will be installed
+---> Package php70u-mysqlnd.x86_64 0:7.0.29-1.ius.centos7 will be installed
+---> Package php70u-pdo.x86_64 0:7.0.29-1.ius.centos7 will be installed
+---> Package php70u-pgsql.x86_64 0:7.0.29-1.ius.centos7 will be installed
+---> Package php70u-process.x86_64 0:7.0.29-1.ius.centos7 will be installed
+---> Package php70u-xml.x86_64 0:7.0.29-1.ius.centos7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                 Arch   Version                 Repository         Size
+================================================================================
+Installing:
+ apigee-drupal-devportal noarch 4.18.01-0.0.262         apigee-release    1.4 M
+Installing for dependencies:
+ apigee-drupal           noarch 7.56-0.0.83             apigee-release    3.2 M
+ apigee-drupal-contrib   noarch 4.18.01-0.0.165         apigee-release     10 M
+ apigee-drush            noarch 8.1.11-0.0.75           apigee-release    1.1 M
+ apigee-lb               noarch 4.18.01-0.0.601         apigee-release     29 k
+ apigee-php              noarch 4.18.01-0.0.49          apigee-thirdparty 5.9 k
+ lua-cjson               x86_64 2.1.0-1.el6             apigee-thirdparty  62 k
+ lua-luaffifb            x86_64 0.9-1.el6               apigee-thirdparty  77 k
+ lua-socket              x86_64 3.0-0.10.rc1.el6        apigee-thirdparty 169 k
+ php70u-cli              x86_64 7.0.29-1.ius.centos7    apigee-thirdparty 4.3 M
+ php70u-common           x86_64 7.0.29-1.ius.centos7    apigee-thirdparty 1.1 M
+ php70u-fpm              x86_64 7.0.29-1.ius.centos7    apigee-thirdparty 1.5 M
+ php70u-gd               x86_64 7.0.29-1.ius.centos7    apigee-thirdparty 174 k
+ php70u-json             x86_64 7.0.29-1.ius.centos7    apigee-thirdparty  67 k
+ php70u-ldap             x86_64 7.0.29-1.ius.centos7    apigee-thirdparty  71 k
+ php70u-mbstring         x86_64 7.0.29-1.ius.centos7    apigee-thirdparty 579 k
+ php70u-mysqlnd          x86_64 7.0.29-1.ius.centos7    apigee-thirdparty 243 k
+ php70u-pdo              x86_64 7.0.29-1.ius.centos7    apigee-thirdparty 129 k
+ php70u-pgsql            x86_64 7.0.29-1.ius.centos7    apigee-thirdparty 126 k
+ php70u-process          x86_64 7.0.29-1.ius.centos7    apigee-thirdparty  84 k
+ php70u-xml              x86_64 7.0.29-1.ius.centos7    apigee-thirdparty 212 k
+ postgresql94            x86_64 9.4.14-1PGDG.rhel7      apigee-thirdparty 1.1 M
+ postgresql94-libs       x86_64 9.4.14-1PGDG.rhel7      apigee-thirdparty 212 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+22 Dependent packages)
+
+Total download size: 26 M
+Installed size: 101 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              509 kB/s |  26 MB  00:51     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : php70u-common-7.0.29-1.ius.centos7.x86_64                   1/23 
+  Installing : php70u-pdo-7.0.29-1.ius.centos7.x86_64                      2/23 
+  Installing : postgresql94-libs-9.4.14-1PGDG.rhel7.x86_64                 3/23 
+  Installing : php70u-pgsql-7.0.29-1.ius.centos7.x86_64                    4/23 
+  Installing : postgresql94-9.4.14-1PGDG.rhel7.x86_64                      5/23 
+  Installing : php70u-mysqlnd-7.0.29-1.ius.centos7.x86_64                  6/23 
+  Installing : php70u-gd-7.0.29-1.ius.centos7.x86_64                       7/23 
+  Installing : php70u-json-7.0.29-1.ius.centos7.x86_64                     8/23 
+  Installing : php70u-process-7.0.29-1.ius.centos7.x86_64                  9/23 
+  Installing : php70u-mbstring-7.0.29-1.ius.centos7.x86_64                10/23 
+  Installing : php70u-fpm-7.0.29-1.ius.centos7.x86_64                     11/23 
+  Installing : php70u-ldap-7.0.29-1.ius.centos7.x86_64                    12/23 
+  Installing : php70u-xml-7.0.29-1.ius.centos7.x86_64                     13/23 
+  Installing : php70u-cli-7.0.29-1.ius.centos7.x86_64                     14/23 
+  Installing : apigee-php-4.18.01-0.0.49.noarch                           15/23 
+  Installing : apigee-drush-8.1.11-0.0.75.noarch                          16/23 
+  Installing : lua-luaffifb-0.9-1.el6.x86_64                              17/23 
+  Installing : lua-cjson-2.1.0-1.el6.x86_64                               18/23 
+  Installing : lua-socket-3.0-0.10.rc1.el6.x86_64                         19/23 
+  Installing : apigee-lb-4.18.01-0.0.601.noarch                           20/23 
+  Installing : apigee-drupal-7.56-0.0.83.noarch                           21/23 
+  Installing : apigee-drupal-contrib-4.18.01-0.0.165.noarch               22/23 
+  Installing : apigee-drupal-devportal-4.18.01-0.0.262.noarch             23/23 
+  Verifying  : php70u-pgsql-7.0.29-1.ius.centos7.x86_64                    1/23 
+  Verifying  : apigee-drupal-devportal-4.18.01-0.0.262.noarch              2/23 
+  Verifying  : lua-socket-3.0-0.10.rc1.el6.x86_64                          3/23 
+  Verifying  : php70u-gd-7.0.29-1.ius.centos7.x86_64                       4/23 
+  Verifying  : php70u-json-7.0.29-1.ius.centos7.x86_64                     5/23 
+  Verifying  : php70u-common-7.0.29-1.ius.centos7.x86_64                   6/23 
+  Verifying  : php70u-process-7.0.29-1.ius.centos7.x86_64                  7/23 
+  Verifying  : apigee-drupal-7.56-0.0.83.noarch                            8/23 
+  Verifying  : apigee-drush-8.1.11-0.0.75.noarch                           9/23 
+  Verifying  : php70u-mbstring-7.0.29-1.ius.centos7.x86_64                10/23 
+  Verifying  : lua-cjson-2.1.0-1.el6.x86_64                               11/23 
+  Verifying  : postgresql94-libs-9.4.14-1PGDG.rhel7.x86_64                12/23 
+  Verifying  : php70u-mysqlnd-7.0.29-1.ius.centos7.x86_64                 13/23 
+  Verifying  : php70u-fpm-7.0.29-1.ius.centos7.x86_64                     14/23 
+  Verifying  : apigee-php-4.18.01-0.0.49.noarch                           15/23 
+  Verifying  : php70u-ldap-7.0.29-1.ius.centos7.x86_64                    16/23 
+  Verifying  : lua-luaffifb-0.9-1.el6.x86_64                              17/23 
+  Verifying  : php70u-pdo-7.0.29-1.ius.centos7.x86_64                     18/23 
+  Verifying  : php70u-xml-7.0.29-1.ius.centos7.x86_64                     19/23 
+  Verifying  : apigee-drupal-contrib-4.18.01-0.0.165.noarch               20/23 
+  Verifying  : postgresql94-9.4.14-1PGDG.rhel7.x86_64                     21/23 
+  Verifying  : apigee-lb-4.18.01-0.0.601.noarch                           22/23 
+  Verifying  : php70u-cli-7.0.29-1.ius.centos7.x86_64                     23/23 
+
+Installed:
+  apigee-drupal-devportal.noarch 0:4.18.01-0.0.262                              
+
+Dependency Installed:
+  apigee-drupal.noarch 0:7.56-0.0.83                                            
+  apigee-drupal-contrib.noarch 0:4.18.01-0.0.165                                
+  apigee-drush.noarch 0:8.1.11-0.0.75                                           
+  apigee-lb.noarch 0:4.18.01-0.0.601                                            
+  apigee-php.noarch 0:4.18.01-0.0.49                                            
+  lua-cjson.x86_64 0:2.1.0-1.el6                                                
+  lua-luaffifb.x86_64 0:0.9-1.el6                                               
+  lua-socket.x86_64 0:3.0-0.10.rc1.el6                                          
+  php70u-cli.x86_64 0:7.0.29-1.ius.centos7                                      
+  php70u-common.x86_64 0:7.0.29-1.ius.centos7                                   
+  php70u-fpm.x86_64 0:7.0.29-1.ius.centos7                                      
+  php70u-gd.x86_64 0:7.0.29-1.ius.centos7                                       
+  php70u-json.x86_64 0:7.0.29-1.ius.centos7                                     
+  php70u-ldap.x86_64 0:7.0.29-1.ius.centos7                                     
+  php70u-mbstring.x86_64 0:7.0.29-1.ius.centos7                                 
+  php70u-mysqlnd.x86_64 0:7.0.29-1.ius.centos7                                  
+  php70u-pdo.x86_64 0:7.0.29-1.ius.centos7                                      
+  php70u-pgsql.x86_64 0:7.0.29-1.ius.centos7                                    
+  php70u-process.x86_64 0:7.0.29-1.ius.centos7                                  
+  php70u-xml.x86_64 0:7.0.29-1.ius.centos7                                      
+  postgresql94.x86_64 0:9.4.14-1PGDG.rhel7                                      
+  postgresql94-libs.x86_64 0:9.4.14-1PGDG.rhel7                                 
+
+Complete!
+NOTICE: apigee-drupal-devportal was not running
+WRITING TO /software/apigee/var/log/apigee-drupal-devportal/apigee-drupal-devportal.log
+
+--------------------------------------------------------------------------------
+START: apigee-drupal-devportal/lib/actions/start 2018-06-29-16.02.35
+--------------------------------------------------------------------------------
+
+Running /software/apigee/apigee-service/bin/apigee-service apigee-drupal-devportal configure
+--------------------------------------------------------------------------------
+apigee-configutil: apigee-drupal-devportal: # OK
+Determining current Drupal webroot
+DRUPAL_WEBROOT: /software/apigee/apigee-drupal/wwwroot
+Copying apigee-drupal-devportal settings.php to /software/apigee/apigee-drupal/wwwroot/sites/default
+
+Restarting apigee-lb to pick up any portal config changes
+--------------------------------------------------------------------------------
+apigee-service: apigee-lb: apigee-lb is not running
+apigee-configutil: apigee-lb: # OK
+apigee-service: apigee-lb: Not running (NO_PIDFILE)
+apigee-service: apigee-lb: status=1, continuing
+apigee-service: apigee-lb: OK
+apigee-service: apigee-lb: apigee-lb is running
+
+Starting php-fpm
+--------------------------------------------------------------------------------
+[29-Jun-2018 16:02:37] ERROR: invalid port value ''
+[29-Jun-2018 16:02:37] ERROR: FPM initialization failed
+
+[31m--------------------------------------------------------------------------------(B[m
+[31mExiting, ERROR!(B[m
+[31m--------------------------------------------------------------------------------(B[m
+  [31mThe actions of this installer are written to a log here:
+
+  /software/apigee/var/log/apigee-drupal-devportal/apigee-drupal-devportal.log
+
+  If you need support during this installation, please
+  include the logfile in your communication.
+--------------------------------------------------------------------------------
+(B[m
+Waiting for Dev Portal to start
+Retrying in 5 sec (1)
+Retrying in 5 sec (2)
+Retrying in 5 sec (3)
+Retrying in 5 sec (4)
+Retrying in 5 sec (5)
+Retrying in 5 sec (6)
+Retrying in 5 sec (7)
+Retrying in 5 sec (8)
+Retrying in 5 sec (9)
+Retrying in 5 sec (10)
+Retrying in 5 sec (11)
+Retrying in 5 sec (12)
+Retrying in 5 sec (13)
+[2018-06-29 04:24:35 PM] Using defaults from /usr/local/share/devportalConfigFile
+[2018-06-29 04:24:35 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-06-29 04:24:35 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-06-29 04:24:35 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-06-29 04:24:35 PM] setup.sh: Proceeding with HOSTIP fe80::c35c:ba22:7c1b:5e80%ens160 10.63.234.121 192.168.122.1
+[2018-06-29 04:24:35 PM] 
+Service setup apigee-drupal-devportal
+
+Loaded plugins: langpacks, priorities, ulninfo
+165 packages excluded due to repository priority protections
+Resolving Dependencies
+--> Running transaction check
+---> Package apigee-drupal-devportal.noarch 0:4.18.01-0.0.262 will be installed
+--> Processing Dependency: apigee-drush >= 8.1.11 for package: apigee-drupal-devportal-4.18.01-0.0.262.noarch
+--> Processing Dependency: apigee-drupal-contrib >= 4.17.05 for package: apigee-drupal-devportal-4.18.01-0.0.262.noarch
+--> Processing Dependency: apigee-drupal >= 7.54 for package: apigee-drupal-devportal-4.18.01-0.0.262.noarch
+--> Running transaction check
+---> Package apigee-drupal.noarch 0:7.56-0.0.83 will be installed
+--> Processing Dependency: apigee-php for package: apigee-drupal-7.56-0.0.83.noarch
+---> Package apigee-drupal-contrib.noarch 0:4.18.01-0.0.165 will be installed
+---> Package apigee-drush.noarch 0:8.1.11-0.0.75 will be installed
+--> Running transaction check
+---> Package apigee-php.noarch 0:4.18.01-0.0.49 will be installed
+--> Processing Dependency: php70u-xml for package: apigee-php-4.18.01-0.0.49.noarch
+--> Processing Dependency: php70u-process for package: apigee-php-4.18.01-0.0.49.noarch
+--> Processing Dependency: php70u-pgsql for package: apigee-php-4.18.01-0.0.49.noarch
+--> Processing Dependency: php70u-pdo for package: apigee-php-4.18.01-0.0.49.noarch
+--> Processing Dependency: php70u-mysqlnd for package: apigee-php-4.18.01-0.0.49.noarch
+--> Processing Dependency: php70u-mbstring for package: apigee-php-4.18.01-0.0.49.noarch
+--> Processing Dependency: php70u-ldap for package: apigee-php-4.18.01-0.0.49.noarch
+--> Processing Dependency: php70u-json for package: apigee-php-4.18.01-0.0.49.noarch
+--> Processing Dependency: php70u-gd for package: apigee-php-4.18.01-0.0.49.noarch
+--> Processing Dependency: php70u-fpm for package: apigee-php-4.18.01-0.0.49.noarch
+--> Processing Dependency: php70u-common for package: apigee-php-4.18.01-0.0.49.noarch
+--> Processing Dependency: php70u-cli for package: apigee-php-4.18.01-0.0.49.noarch
+--> Running transaction check
+---> Package php70u-cli.x86_64 0:7.0.29-1.ius.centos7 will be installed
+---> Package php70u-common.x86_64 0:7.0.29-1.ius.centos7 will be installed
+---> Package php70u-fpm.x86_64 0:7.0.29-1.ius.centos7 will be installed
+---> Package php70u-gd.x86_64 0:7.0.29-1.ius.centos7 will be installed
+---> Package php70u-json.x86_64 0:7.0.29-1.ius.centos7 will be installed
+---> Package php70u-ldap.x86_64 0:7.0.29-1.ius.centos7 will be installed
+---> Package php70u-mbstring.x86_64 0:7.0.29-1.ius.centos7 will be installed
+---> Package php70u-mysqlnd.x86_64 0:7.0.29-1.ius.centos7 will be installed
+---> Package php70u-pdo.x86_64 0:7.0.29-1.ius.centos7 will be installed
+---> Package php70u-pgsql.x86_64 0:7.0.29-1.ius.centos7 will be installed
+---> Package php70u-process.x86_64 0:7.0.29-1.ius.centos7 will be installed
+---> Package php70u-xml.x86_64 0:7.0.29-1.ius.centos7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                 Arch   Version                 Repository         Size
+================================================================================
+Installing:
+ apigee-drupal-devportal noarch 4.18.01-0.0.262         apigee-release    1.4 M
+Installing for dependencies:
+ apigee-drupal           noarch 7.56-0.0.83             apigee-release    3.2 M
+ apigee-drupal-contrib   noarch 4.18.01-0.0.165         apigee-release     10 M
+ apigee-drush            noarch 8.1.11-0.0.75           apigee-release    1.1 M
+ apigee-php              noarch 4.18.01-0.0.49          apigee-thirdparty 5.9 k
+ php70u-cli              x86_64 7.0.29-1.ius.centos7    apigee-thirdparty 4.3 M
+ php70u-common           x86_64 7.0.29-1.ius.centos7    apigee-thirdparty 1.1 M
+ php70u-fpm              x86_64 7.0.29-1.ius.centos7    apigee-thirdparty 1.5 M
+ php70u-gd               x86_64 7.0.29-1.ius.centos7    apigee-thirdparty 174 k
+ php70u-json             x86_64 7.0.29-1.ius.centos7    apigee-thirdparty  67 k
+ php70u-ldap             x86_64 7.0.29-1.ius.centos7    apigee-thirdparty  71 k
+ php70u-mbstring         x86_64 7.0.29-1.ius.centos7    apigee-thirdparty 579 k
+ php70u-mysqlnd          x86_64 7.0.29-1.ius.centos7    apigee-thirdparty 243 k
+ php70u-pdo              x86_64 7.0.29-1.ius.centos7    apigee-thirdparty 129 k
+ php70u-pgsql            x86_64 7.0.29-1.ius.centos7    apigee-thirdparty 126 k
+ php70u-process          x86_64 7.0.29-1.ius.centos7    apigee-thirdparty  84 k
+ php70u-xml              x86_64 7.0.29-1.ius.centos7    apigee-thirdparty 212 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+16 Dependent packages)
+
+Total download size: 24 M
+Installed size: 94 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              627 kB/s |  24 MB  00:39     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : php70u-common-7.0.29-1.ius.centos7.x86_64                   1/17 
+  Installing : php70u-pdo-7.0.29-1.ius.centos7.x86_64                      2/17 
+  Installing : php70u-mysqlnd-7.0.29-1.ius.centos7.x86_64                  3/17 
+  Installing : php70u-pgsql-7.0.29-1.ius.centos7.x86_64                    4/17 
+  Installing : php70u-process-7.0.29-1.ius.centos7.x86_64                  5/17 
+  Installing : php70u-mbstring-7.0.29-1.ius.centos7.x86_64                 6/17 
+  Installing : php70u-xml-7.0.29-1.ius.centos7.x86_64                      7/17 
+  Installing : php70u-fpm-7.0.29-1.ius.centos7.x86_64                      8/17 
+  Installing : php70u-ldap-7.0.29-1.ius.centos7.x86_64                     9/17 
+  Installing : php70u-gd-7.0.29-1.ius.centos7.x86_64                      10/17 
+  Installing : php70u-cli-7.0.29-1.ius.centos7.x86_64                     11/17 
+  Installing : php70u-json-7.0.29-1.ius.centos7.x86_64                    12/17 
+  Installing : apigee-php-4.18.01-0.0.49.noarch                           13/17 
+  Installing : apigee-drupal-7.56-0.0.83.noarch                           14/17 
+  Installing : apigee-drupal-contrib-4.18.01-0.0.165.noarch               15/17 
+  Installing : apigee-drush-8.1.11-0.0.75.noarch                          16/17 
+  Installing : apigee-drupal-devportal-4.18.01-0.0.262.noarch             17/17 
+  Verifying  : apigee-drupal-7.56-0.0.83.noarch                            1/17 
+  Verifying  : apigee-drush-8.1.11-0.0.75.noarch                           2/17 
+  Verifying  : php70u-process-7.0.29-1.ius.centos7.x86_64                  3/17 
+  Verifying  : php70u-mbstring-7.0.29-1.ius.centos7.x86_64                 4/17 
+  Verifying  : php70u-pdo-7.0.29-1.ius.centos7.x86_64                      5/17 
+  Verifying  : php70u-xml-7.0.29-1.ius.centos7.x86_64                      6/17 
+  Verifying  : php70u-mysqlnd-7.0.29-1.ius.centos7.x86_64                  7/17 
+  Verifying  : php70u-common-7.0.29-1.ius.centos7.x86_64                   8/17 
+  Verifying  : apigee-drupal-devportal-4.18.01-0.0.262.noarch              9/17 
+  Verifying  : php70u-fpm-7.0.29-1.ius.centos7.x86_64                     10/17 
+  Verifying  : apigee-drupal-contrib-4.18.01-0.0.165.noarch               11/17 
+  Verifying  : apigee-php-4.18.01-0.0.49.noarch                           12/17 
+  Verifying  : php70u-pgsql-7.0.29-1.ius.centos7.x86_64                   13/17 
+  Verifying  : php70u-ldap-7.0.29-1.ius.centos7.x86_64                    14/17 
+  Verifying  : php70u-gd-7.0.29-1.ius.centos7.x86_64                      15/17 
+  Verifying  : php70u-cli-7.0.29-1.ius.centos7.x86_64                     16/17 
+  Verifying  : php70u-json-7.0.29-1.ius.centos7.x86_64                    17/17 
+
+Installed:
+  apigee-drupal-devportal.noarch 0:4.18.01-0.0.262                              
+
+Dependency Installed:
+  apigee-drupal.noarch 0:7.56-0.0.83                                            
+  apigee-drupal-contrib.noarch 0:4.18.01-0.0.165                                
+  apigee-drush.noarch 0:8.1.11-0.0.75                                           
+  apigee-php.noarch 0:4.18.01-0.0.49                                            
+  php70u-cli.x86_64 0:7.0.29-1.ius.centos7                                      
+  php70u-common.x86_64 0:7.0.29-1.ius.centos7                                   
+  php70u-fpm.x86_64 0:7.0.29-1.ius.centos7                                      
+  php70u-gd.x86_64 0:7.0.29-1.ius.centos7                                       
+  php70u-json.x86_64 0:7.0.29-1.ius.centos7                                     
+  php70u-ldap.x86_64 0:7.0.29-1.ius.centos7                                     
+  php70u-mbstring.x86_64 0:7.0.29-1.ius.centos7                                 
+  php70u-mysqlnd.x86_64 0:7.0.29-1.ius.centos7                                  
+  php70u-pdo.x86_64 0:7.0.29-1.ius.centos7                                      
+  php70u-pgsql.x86_64 0:7.0.29-1.ius.centos7                                    
+  php70u-process.x86_64 0:7.0.29-1.ius.centos7                                  
+  php70u-xml.x86_64 0:7.0.29-1.ius.centos7                                      
+
+Complete!
+NOTICE: apigee-drupal-devportal was not running
+WRITING TO /software/apigee/var/log/apigee-drupal-devportal/apigee-drupal-devportal.log
+
+--------------------------------------------------------------------------------
+START: apigee-drupal-devportal/lib/actions/start 2018-06-29-16.25.25
+--------------------------------------------------------------------------------
+
+Running /software/apigee/apigee-service/bin/apigee-service apigee-drupal-devportal configure
+--------------------------------------------------------------------------------
+apigee-configutil: apigee-drupal-devportal: # OK
+Determining current Drupal webroot
+DRUPAL_WEBROOT: /software/apigee/apigee-drupal/wwwroot
+Copying apigee-drupal-devportal settings.php to /software/apigee/apigee-drupal/wwwroot/sites/default
+
+Restarting apigee-lb to pick up any portal config changes
+--------------------------------------------------------------------------------
+apigee-service: apigee-lb: apigee-lb is not running
+apigee-configutil: apigee-lb: # OK
+apigee-service: apigee-lb: Not running (NO_PIDFILE)
+apigee-service: apigee-lb: status=1, continuing
+apigee-service: apigee-lb: OK
+apigee-service: apigee-lb: apigee-lb is running
+
+Starting php-fpm
+--------------------------------------------------------------------------------
+[29-Jun-2018 16:25:27] ERROR: invalid port value ''
+[29-Jun-2018 16:25:27] ERROR: FPM initialization failed
+
+[31m--------------------------------------------------------------------------------(B[m
+[31mExiting, ERROR!(B[m
+[31m--------------------------------------------------------------------------------(B[m
+  [31mThe actions of this installer are written to a log here:
+
+  /software/apigee/var/log/apigee-drupal-devportal/apigee-drupal-devportal.log
+
+  If you need support during this installation, please
+  include the logfile in your communication.
+--------------------------------------------------------------------------------
+(B[m
+Waiting for Dev Portal to start
+Retrying in 5 sec (1)
+Retrying in 5 sec (2)
+Retrying in 5 sec (3)
+Retrying in 5 sec (4)
+Retrying in 5 sec (5)
+Retrying in 5 sec (6)
+Retrying in 5 sec (7)
+Retrying in 5 sec (8)
+Retrying in 5 sec (9)
+Retrying in 5 sec (10)
+Retrying in 5 sec (11)
+Retrying in 5 sec (12)
+Retrying in 5 sec (13)
+Retrying in 5 sec (14)
+Retrying in 5 sec (15)
+Retrying in 5 sec (16)
+Retrying in 5 sec (17)
+Retrying in 5 sec (18)
+Retrying in 5 sec (19)
+Retrying in 5 sec (20)
+
+Error starting Dev Portal
+Continue anyhow? y/n (y): [2018-06-29 04:30:26 PM] 
+Finished apigee-drupal-devportal setup
+
+[2018-06-29 04:30:26 PM] 
+[2018-06-29 04:30:26 PM] Finished Setup
+[2018-06-29 04:30:26 PM] 
+[2018-06-29 04:30:26 PM] Refer the documentation for provisioning instructions.
+[2018-06-29 04:30:26 PM] Setup wrote to log file: /tmp/setup-root.log
+[2018-06-29 05:20:15 PM] Using defaults from /usr/local/share/devportalConfigFile
+[2018-06-29 05:20:15 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-06-29 05:20:15 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-06-29 05:20:15 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-06-29 05:20:15 PM] setup.sh: Proceeding with HOSTIP fe80::c35c:ba22:7c1b:5e80%ens160 10.63.234.121 192.168.122.1
+[2018-06-29 05:20:15 PM] 
+Service setup apigee-drupal-devportal
+
+Loaded plugins: langpacks, priorities, ulninfo
+165 packages excluded due to repository priority protections
+No packages marked for update
+NOTICE: apigee-drupal-devportal was not running
+WRITING TO /software/apigee/var/log/apigee-drupal-devportal/apigee-drupal-devportal.log
+
+--------------------------------------------------------------------------------
+START: apigee-drupal-devportal/lib/actions/start 2018-06-29-17.20.19
+--------------------------------------------------------------------------------
+
+Running /software/apigee/apigee-service/bin/apigee-service apigee-drupal-devportal configure
+--------------------------------------------------------------------------------
+apigee-configutil: apigee-drupal-devportal: # OK
+Determining current Drupal webroot
+DRUPAL_WEBROOT: /software/apigee/apigee-drupal/wwwroot
+Copying apigee-drupal-devportal settings.php to /software/apigee/apigee-drupal/wwwroot/sites/default
+
+Restarting apigee-lb to pick up any portal config changes
+--------------------------------------------------------------------------------
+apigee-service: apigee-lb: apigee-lb is not running
+apigee-configutil: apigee-lb: # OK
+apigee-service: apigee-lb: Not running (NO_PIDFILE)
+apigee-service: apigee-lb: status=1, continuing
+apigee-service: apigee-lb: OK
+apigee-service: apigee-lb: apigee-lb is running
+
+Starting php-fpm
+--------------------------------------------------------------------------------
+[29-Jun-2018 17:20:21] ERROR: invalid port value ''
+[29-Jun-2018 17:20:21] ERROR: FPM initialization failed
+
+[31m--------------------------------------------------------------------------------(B[m
+[31mExiting, ERROR!(B[m
+[31m--------------------------------------------------------------------------------(B[m
+  [31mThe actions of this installer are written to a log here:
+
+  /software/apigee/var/log/apigee-drupal-devportal/apigee-drupal-devportal.log
+
+  If you need support during this installation, please
+  include the logfile in your communication.
+--------------------------------------------------------------------------------
+(B[m
+Waiting for Dev Portal to start
+Retrying in 5 sec (1)
+Retrying in 5 sec (2)
+Retrying in 5 sec (3)
+Retrying in 5 sec (4)
+Retrying in 5 sec (5)
+Retrying in 5 sec (6)
+Retrying in 5 sec (7)
+Retrying in 5 sec (8)
+Retrying in 5 sec (9)
+Retrying in 5 sec (10)
+Retrying in 5 sec (11)
+Retrying in 5 sec (12)
+Retrying in 5 sec (13)
+Retrying in 5 sec (14)
+Retrying in 5 sec (15)
+Retrying in 5 sec (16)
+Retrying in 5 sec (17)
+Retrying in 5 sec (18)
+Retrying in 5 sec (19)
+Retrying in 5 sec (20)
+
+Error starting Dev Portal
+Continue anyhow? y/n (y): [2018-06-29 05:24:03 PM] 
+Finished apigee-drupal-devportal setup
+
+[2018-06-29 05:24:03 PM] 
+[2018-06-29 05:24:03 PM] Finished Setup
+[2018-06-29 05:24:03 PM] 
+[2018-06-29 05:24:03 PM] Refer the documentation for provisioning instructions.
+[2018-06-29 05:24:03 PM] Setup wrote to log file: /tmp/setup-root.log
+[2018-06-29 05:39:44 PM] Using defaults from /usr/local/share/devportalConfigFile
+[2018-06-29 05:39:44 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-06-29 05:39:44 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-06-29 05:39:44 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-06-29 05:39:44 PM] setup.sh: Proceeding with HOSTIP fe80::c35c:ba22:7c1b:5e80%ens160 10.63.234.121 192.168.122.1
+[2018-06-29 05:39:44 PM] 
+Service setup apigee-drupal-devportal
+
+Loaded plugins: langpacks, priorities, ulninfo
+165 packages excluded due to repository priority protections
+No packages marked for update
+NOTICE: apigee-drupal-devportal was not running
+WRITING TO /software/apigee/var/log/apigee-drupal-devportal/apigee-drupal-devportal.log
+
+--------------------------------------------------------------------------------
+START: apigee-drupal-devportal/lib/actions/start 2018-06-29-17.39.48
+--------------------------------------------------------------------------------
+
+Running /software/apigee/apigee-service/bin/apigee-service apigee-drupal-devportal configure
+--------------------------------------------------------------------------------
+apigee-configutil: apigee-drupal-devportal: # OK
+Determining current Drupal webroot
+DRUPAL_WEBROOT: /software/apigee/apigee-drupal/wwwroot
+Copying apigee-drupal-devportal settings.php to /software/apigee/apigee-drupal/wwwroot/sites/default
+
+Restarting apigee-lb to pick up any portal config changes
+--------------------------------------------------------------------------------
+apigee-service: apigee-lb: pid=22054
+apigee-service: apigee-lb: OK
+apigee-service: apigee-lb: Not running (DEAD)
+apigee-service: apigee-lb: OK
+apigee-configutil: apigee-lb: # OK
+apigee-service: apigee-lb: Not running (NO_LOCKFILE)
+apigee-service: apigee-lb: status=2, continuing
+apigee-service: apigee-lb: OK
+apigee-service: apigee-lb: apigee-lb is running
+
+Starting php-fpm
+--------------------------------------------------------------------------------
+[29-Jun-2018 17:39:51] ERROR: invalid port value ''
+[29-Jun-2018 17:39:51] ERROR: FPM initialization failed
+
+[31m--------------------------------------------------------------------------------(B[m
+[31mExiting, ERROR!(B[m
+[31m--------------------------------------------------------------------------------(B[m
+  [31mThe actions of this installer are written to a log here:
+
+  /software/apigee/var/log/apigee-drupal-devportal/apigee-drupal-devportal.log
+
+  If you need support during this installation, please
+  include the logfile in your communication.
+--------------------------------------------------------------------------------
+(B[m
+Waiting for Dev Portal to start
+Retrying in 5 sec (1)
+Retrying in 5 sec (2)
+Retrying in 5 sec (3)
+Retrying in 5 sec (4)
+Retrying in 5 sec (5)
+Retrying in 5 sec (6)
+Retrying in 5 sec (7)
+Retrying in 5 sec (8)
+Retrying in 5 sec (9)
+Retrying in 5 sec (10)
+Retrying in 5 sec (11)
+Retrying in 5 sec (12)
+Retrying in 5 sec (13)
+Retrying in 5 sec (14)
+Retrying in 5 sec (15)
+Retrying in 5 sec (16)
+Retrying in 5 sec (17)
+Retrying in 5 sec (18)
+Retrying in 5 sec (19)
+Retrying in 5 sec (20)
+
+Error starting Dev Portal
+Continue anyhow? y/n (y): [2018-06-29 05:45:14 PM] 
+Finished apigee-drupal-devportal setup
+
+[2018-06-29 05:45:14 PM] 
+[2018-06-29 05:45:14 PM] Finished Setup
+[2018-06-29 05:45:14 PM] 
+[2018-06-29 05:45:14 PM] Refer the documentation for provisioning instructions.
+[2018-06-29 05:45:14 PM] Setup wrote to log file: /tmp/setup-root.log
+[2018-06-29 05:56:44 PM] Using defaults from /usr/local/share/devportalConfigFile
+[2018-06-29 05:56:44 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-06-29 05:56:44 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-06-29 05:56:44 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-06-29 05:56:44 PM] setup.sh: Proceeding with HOSTIP fe80::c35c:ba22:7c1b:5e80%ens160 10.63.234.121 192.168.122.1
+[2018-06-29 05:56:44 PM] 
+Service setup apigee-drupal-devportal
+
+Loaded plugins: langpacks, priorities, ulninfo
+165 packages excluded due to repository priority protections
+No packages marked for update
+NOTICE: apigee-drupal-devportal was not running
+WRITING TO /software/apigee/var/log/apigee-drupal-devportal/apigee-drupal-devportal.log
+
+--------------------------------------------------------------------------------
+START: apigee-drupal-devportal/lib/actions/start 2018-06-29-17.56.54
+--------------------------------------------------------------------------------
+
+Running /software/apigee/apigee-service/bin/apigee-service apigee-drupal-devportal configure
+--------------------------------------------------------------------------------
+apigee-configutil: apigee-drupal-devportal: # OK
+Determining current Drupal webroot
+DRUPAL_WEBROOT: /software/apigee/apigee-drupal/wwwroot
+Copying apigee-drupal-devportal settings.php to /software/apigee/apigee-drupal/wwwroot/sites/default
+
+Restarting apigee-lb to pick up any portal config changes
+--------------------------------------------------------------------------------
+apigee-service: apigee-lb: pid=22727
+apigee-service: apigee-lb: OK
+apigee-service: apigee-lb: Not running (DEAD)
+apigee-service: apigee-lb: OK
+apigee-configutil: apigee-lb: # OK
+apigee-service: apigee-lb: Not running (NO_LOCKFILE)
+apigee-service: apigee-lb: status=2, continuing
+apigee-service: apigee-lb: OK
+apigee-service: apigee-lb: apigee-lb is running
+
+Starting php-fpm
+--------------------------------------------------------------------------------
+[29-Jun-2018 17:56:56] ERROR: invalid port value ''
+[29-Jun-2018 17:56:56] ERROR: FPM initialization failed
+
+[31m--------------------------------------------------------------------------------(B[m
+[31mExiting, ERROR!(B[m
+[31m--------------------------------------------------------------------------------(B[m
+  [31mThe actions of this installer are written to a log here:
+
+  /software/apigee/var/log/apigee-drupal-devportal/apigee-drupal-devportal.log
+
+  If you need support during this installation, please
+  include the logfile in your communication.
+--------------------------------------------------------------------------------
+(B[m
+Waiting for Dev Portal to start
+Retrying in 5 sec (1)
+Retrying in 5 sec (2)
+Retrying in 5 sec (3)
+Retrying in 5 sec (4)
+Retrying in 5 sec (5)
+Retrying in 5 sec (6)
+Retrying in 5 sec (7)
+Retrying in 5 sec (8)
+Retrying in 5 sec (9)
+Retrying in 5 sec (10)
+Retrying in 5 sec (11)
+Retrying in 5 sec (12)
+Retrying in 5 sec (13)
+Retrying in 5 sec (14)
+Retrying in 5 sec (15)
+Retrying in 5 sec (16)
+Retrying in 5 sec (17)
+Retrying in 5 sec (18)
+Retrying in 5 sec (19)
+Retrying in 5 sec (20)
+
+Error starting Dev Portal
+Continue anyhow? y/n (y): Quitting
+[2018-06-29 06:00:50 PM] Error: setup.sh: /opt/apigee/apigee-service/bin/apigee-service exited with unexpected status 1
+[2018-06-29 06:19:37 PM] Using defaults from /usr/local/share/devportalConfigFile
+[2018-06-29 06:19:37 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-06-29 06:19:37 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-06-29 06:19:37 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-06-29 06:19:37 PM] setup.sh: Proceeding with HOSTIP 10.63.234.121
+[2018-06-29 06:19:37 PM] 
+Service setup apigee-drupal-devportal
+
+Loaded plugins: langpacks, priorities, ulninfo
+165 packages excluded due to repository priority protections
+No packages marked for update
+WRITING TO /software/apigee/var/log/apigee-drupal-devportal/apigee-drupal-devportal.log
+
+--------------------------------------------------------------------------------
+START: apigee-drupal-devportal/lib/actions/setup 2018-06-29-18.19.41
+--------------------------------------------------------------------------------
+
+Validating configuration
+--------------------------------------------------------------------------------
+
+Updating application properties
+--------------------------------------------------------------------------------
+TOKEN_OVERRIDE_DIR: /software/apigee/token/application
+Creating file /software/apigee/token/application/drupal-devportal.properties
+conf_dbname does not exist in /software/apigee/token/application/drupal-devportal.properties. Adding...
+conf_dbuser does not exist in /software/apigee/token/application/drupal-devportal.properties. Adding...
+conf_dbpass does not exist in /software/apigee/token/application/drupal-devportal.properties. Adding...
+conf_dbhost does not exist in /software/apigee/token/application/drupal-devportal.properties. Adding...
+conf_datadir does not exist in /software/apigee/token/application/drupal-devportal.properties. Adding...
+php_fpm_port does not exist in /software/apigee/token/application/drupal-devportal.properties. Adding...
+php_pid_file does not exist in /software/apigee/token/application/drupal-devportal.properties. Adding...
+
+Invoking /software/apigee/apigee-service/bin/apigee-service apigee-drupal-devportal configure
+--------------------------------------------------------------------------------
+Running /software/apigee/apigee-service/bin/apigee-service apigee-drupal-devportal configure
+The file conf/apigee-drupal-devportal-nginx.conf was changed
+[ChangeDelta, position: 42, lines: [      fastcgi_pass 127.0.0.1:{T}php_fpm_port{/T};] to [      fastcgi_pass 127.0.0.1:8800;]]
+The file conf/php-fpm.conf was changed
+[ChangeDelta, position: 3, lines: [listen =127.0.0.1:${php_fpm_port}] to [listen =127.0.0.1:8800]]
+[ChangeDelta, position: 17, lines: [pid=${php_pid_file}] to [pid=/software/apigee/var/run/apigee-drupal-devportal/apigee-drupal-devportal.pid]]
+The file conf/settings.php was changed
+[ChangeDelta, position: 9, lines: [  'database' => '{T}conf_dbname{/T}',,   'username' => '{T}conf_dbuser{/T}',,   'password' => '{T}conf_dbpass{/T}',,   'host'     => '{T}conf_dbhost{/T}',] to [  'database' => 'devportal',,   'username' => 'drupaladmin',,   'password' => 'portalSecret',,   'host'     => '10.63.234.121',]]
+[ChangeDelta, position: 18, lines: [$conf['file_private_path'] = '{T}conf_datadir{/T}/private';] to [$conf['file_private_path'] = '/software/apigee/data/apigee-drupal-devportal/private';]]
+apigee-configutil: apigee-drupal-devportal: # OK
+Starting apigee-lb
+apigee-service: apigee-lb: apigee-lb is already running
+apigee-service: apigee-lb: OK
+apigee-service: apigee-lb: apigee-lb is running
+
+Adding apigee-drupal-devportal-nginx.conf to Apigee LB configuration
+--------------------------------------------------------------------------------
+
+Configuring database
+--------------------------------------------------------------------------------
+Checking if database exists...
+psql: FATAL:  password authentication failed for user "apigee"
+
+[31m--------------------------------------------------------------------------------(B[m
+[31mExiting, ERROR!(B[m
+[31m--------------------------------------------------------------------------------(B[m
+  [31mThe actions of this installer are written to a log here:
+
+  /software/apigee/var/log/apigee-drupal-devportal/apigee-drupal-devportal.log
+
+  If you need support during this installation, please
+  include the logfile in your communication.
+--------------------------------------------------------------------------------
+(B[m
+NOTICE: apigee-drupal-devportal was not running
+WRITING TO /software/apigee/var/log/apigee-drupal-devportal/apigee-drupal-devportal.log
+
+--------------------------------------------------------------------------------
+START: apigee-drupal-devportal/lib/actions/start 2018-06-29-18.19.42
+--------------------------------------------------------------------------------
+
+Running /software/apigee/apigee-service/bin/apigee-service apigee-drupal-devportal configure
+--------------------------------------------------------------------------------
+apigee-configutil: apigee-drupal-devportal: # OK
+Determining current Drupal webroot
+DRUPAL_WEBROOT: /software/apigee/apigee-drupal/wwwroot
+Copying apigee-drupal-devportal settings.php to /software/apigee/apigee-drupal/wwwroot/sites/default
+
+Restarting apigee-lb to pick up any portal config changes
+--------------------------------------------------------------------------------
+apigee-service: apigee-lb: pid=23870
+apigee-service: apigee-lb: OK
+apigee-service: apigee-lb: Not running (DEAD)
+apigee-service: apigee-lb: OK
+apigee-configutil: apigee-lb: # OK
+apigee-service: apigee-lb: Not running (NO_PIDFILE)
+apigee-service: apigee-lb: status=1, continuing
+apigee-service: apigee-lb: OK
+apigee-service: apigee-lb: apigee-lb is running
+
+Starting php-fpm
+--------------------------------------------------------------------------------
+OK: apigee-drupal-devportal started
+
+--------------------------------------------------------------------------------
+END: apigee-drupal-devportal/lib/actions/start 2018-06-29-18.19.42
+--------------------------------------------------------------------------------
+Waiting for Dev Portal to start
+Retrying in 5 sec (1)
+Retrying in 5 sec (2)
+Retrying in 5 sec (3)
+Retrying in 5 sec (4)
+Retrying in 5 sec (5)
+Retrying in 5 sec (6)
+Retrying in 5 sec (7)
+Retrying in 5 sec (8)
+Retrying in 5 sec (9)
+Retrying in 5 sec (10)
+Retrying in 5 sec (11)
+Retrying in 5 sec (12)
+Retrying in 5 sec (13)
+Retrying in 5 sec (14)
+Retrying in 5 sec (15)
+Retrying in 5 sec (16)
+Retrying in 5 sec (17)
+Retrying in 5 sec (18)
+Retrying in 5 sec (19)
+Retrying in 5 sec (20)
+
+Error starting Dev Portal
+Continue anyhow? y/n (y): [2018-06-29 06:23:29 PM] 
+Finished apigee-drupal-devportal setup
+
+[2018-06-29 06:23:29 PM] 
+[2018-06-29 06:23:29 PM] Finished Setup
+[2018-06-29 06:23:29 PM] 
+[2018-06-29 06:23:29 PM] Refer the documentation for provisioning instructions.
+[2018-06-29 06:23:29 PM] Setup wrote to log file: /tmp/setup-root.log
+[2018-07-02 02:01:35 PM] Using defaults from /usr/local/share/devportalConfigFile
+[2018-07-02 02:01:35 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-07-02 02:01:35 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-07-02 02:01:35 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-07-02 02:01:35 PM] setup.sh: Proceeding with HOSTIP fe80::c35c:ba22:7c1b:5e80%ens160 10.63.234.121 192.168.122.1
+[2018-07-02 02:01:35 PM] 
+Service setup apigee-drupal-devportal
+
+Loaded plugins: langpacks, priorities, ulninfo
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30000 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+Could not get metalink https://mirrors.fedoraproject.org/metalink?repo=epel-7&arch=x86_64 error was
+14: curl#7 - "Failed to connect to 2610:28:3090:3001:dead:beef:cafe:fed3: Network is unreachable"
+165 packages excluded due to repository priority protections
+No packages marked for update
+OK: apigee-drupal-devportal stopped successfully
+WRITING TO /software/apigee/var/log/apigee-drupal-devportal/apigee-drupal-devportal.log
+
+--------------------------------------------------------------------------------
+START: apigee-drupal-devportal/lib/actions/start 2018-07-02-14.27.10
+--------------------------------------------------------------------------------
+
+Running /software/apigee/apigee-service/bin/apigee-service apigee-drupal-devportal configure
+--------------------------------------------------------------------------------
+apigee-configutil: apigee-drupal-devportal: # OK
+Determining current Drupal webroot
+DRUPAL_WEBROOT: /software/apigee/apigee-drupal/wwwroot
+Copying apigee-drupal-devportal settings.php to /software/apigee/apigee-drupal/wwwroot/sites/default
+
+Restarting apigee-lb to pick up any portal config changes
+--------------------------------------------------------------------------------
+apigee-service: apigee-lb: pid=25256
+apigee-service: apigee-lb: OK
+apigee-service: apigee-lb: Not running (DEAD)
+apigee-service: apigee-lb: OK
+apigee-configutil: apigee-lb: # OK
+apigee-service: apigee-lb: Not running (NO_PIDFILE)
+apigee-service: apigee-lb: status=1, continuing
+apigee-service: apigee-lb: OK
+apigee-service: apigee-lb: apigee-lb is running
+
+Starting php-fpm
+--------------------------------------------------------------------------------
+OK: apigee-drupal-devportal started
+
+--------------------------------------------------------------------------------
+END: apigee-drupal-devportal/lib/actions/start 2018-07-02-14.27.10
+--------------------------------------------------------------------------------
+Waiting for Dev Portal to start
+Retrying in 5 sec (1)
+Retrying in 5 sec (2)
+Retrying in 5 sec (3)
+Retrying in 5 sec (4)
+Retrying in 5 sec (5)
+Retrying in 5 sec (6)
+Retrying in 5 sec (7)
+Retrying in 5 sec (8)
+Retrying in 5 sec (9)
+Retrying in 5 sec (10)
+Retrying in 5 sec (11)
+Retrying in 5 sec (12)
+Retrying in 5 sec (13)
+Retrying in 5 sec (14)
+Retrying in 5 sec (15)
+Retrying in 5 sec (16)
+Retrying in 5 sec (17)
+Retrying in 5 sec (18)
+Retrying in 5 sec (19)
+Retrying in 5 sec (20)
+
+Error starting Dev Portal
+Continue anyhow? y/n (y): [2018-07-02 02:34:23 PM] 
+Finished apigee-drupal-devportal setup
+
+[2018-07-02 02:34:23 PM] 
+[2018-07-02 02:34:23 PM] Finished Setup
+[2018-07-02 02:34:23 PM] 
+[2018-07-02 02:34:23 PM] Refer the documentation for provisioning instructions.
+[2018-07-02 02:34:23 PM] Setup wrote to log file: /tmp/setup-root.log
+[2018-07-02 04:30:59 PM] Using defaults from /usr/local/share/postgresConfigfile
+[2018-07-02 04:30:59 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-07-02 04:30:59 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-07-02 04:30:59 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-07-02 04:30:59 PM] 
+[2018-07-02 04:30:59 PM] 0) 10.63.234.121
+[2018-07-02 04:30:59 PM] 1) 192.168.122.1
+[2018-07-02 04:30:59 PM] Select an IP address to use for this host: 
+[2018-07-02 04:31:09 PM] 10.63.234.121
+[2018-07-02 04:31:09 PM] setup.sh: Proceeding with HOSTIP 10.63.234.121
+[2018-07-02 04:31:09 PM] 
+Service setup apigee-postgresql
+
+Loaded plugins: langpacks, priorities, ulninfo
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30000 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30002 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30000 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+165 packages excluded due to repository priority protections
+No packages marked for update
+/software/apigee/apigee-lib/apigee-lib.sh: line 943: ?HOSTIP=fe80::c35c:ba22:7c1b:5e80%ens160: command not found
+Validating setup variables
+/usr/local/share/postgresConfigfile: line 7: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 9: ?HOSTIP=fe80::c35c:ba22:7c1b:5e80%ens160: command not found
+/usr/local/share/postgresConfigfile: line 10: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 13: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 16: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 20: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 23: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 26: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 29: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 32: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 33: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 40: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 45: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 48: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 52: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 53: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 58: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 62: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 63: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 64: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 70: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 71: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 75: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 81: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 82: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 87: $'\r': command not found
+/usr/local/share/postgresConfigfile: line 92: $'\r': command not found
+Checking for required variables
+Checking required variable HOSTIP...OK
+Checking required variable RUN_USER...OK
+Checking required variable RUN_GROUP...OK
+
+Checking for optional variables
+apigee-service: apigee-postgresql: OK
+Postgres is running...looks like the setup is already done, skipping setup
+apigee-service: apigee-postgresql: OK
+apigee-configutil: apigee-postgresql: # OK
+apigee-service: apigee-postgresql: Not running (NO_PIDFILE)
+apigee-service: apigee-postgresql: status=1, continuing
+apigee-service: apigee-postgresql: OK
+apigee-service: apigee-postgresql: apigee-postgresql is running
+Waiting for postgres to finish start
+
+postgres successfully started
+[2018-07-02 04:56:17 PM] 
+Finished apigee-postgresql setup
+
+[2018-07-02 04:56:17 PM] 
+[2018-07-02 04:56:17 PM] Finished Setup
+[2018-07-02 04:56:17 PM] 
+[2018-07-02 04:56:17 PM] Refer the documentation for provisioning instructions.
+[2018-07-02 04:56:17 PM] Setup wrote to log file: /tmp/setup-root.log
+[2018-07-02 05:31:48 PM] Using defaults from /usr/local/share/devportalConfigFile
+[2018-07-02 05:31:48 PM] setup.sh: Info: Check for system requirements is not enabled.
+[2018-07-02 05:31:48 PM] setup.sh: Info: Enable system requirements check by setting ENABLE_SYSTEM_CHECK=y 
+[2018-07-02 05:31:48 PM] setup.sh: Info: To run system requirements check without installing the profile use -t option
+[2018-07-02 05:31:48 PM] setup.sh: Proceeding with HOSTIP fe80::c35c:ba22:7c1b:5e80%ens160 10.63.234.121 192.168.122.1
+[2018-07-02 05:31:48 PM] 
+Service setup apigee-drupal-devportal
+
+Loaded plugins: langpacks, priorities, ulninfo
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/apigee/release/4.18.01/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: [Errno 12] Timeout on https://reliance:Eck5i9W2p57QRs@software.apigee.com/thirdparty/7Server/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30000 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30000 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+165 packages excluded due to repository priority protections
+No packages marked for update
+OK: apigee-drupal-devportal stopped successfully
+WRITING TO /software/apigee/var/log/apigee-drupal-devportal/apigee-drupal-devportal.log
+
+--------------------------------------------------------------------------------
+START: apigee-drupal-devportal/lib/actions/start 2018-07-02-17.56.53
+--------------------------------------------------------------------------------
+
+Running /software/apigee/apigee-service/bin/apigee-service apigee-drupal-devportal configure
+--------------------------------------------------------------------------------
+apigee-configutil: apigee-drupal-devportal: # OK
+Determining current Drupal webroot
+DRUPAL_WEBROOT: /software/apigee/apigee-drupal/wwwroot
+Copying apigee-drupal-devportal settings.php to /software/apigee/apigee-drupal/wwwroot/sites/default
+
+Restarting apigee-lb to pick up any portal config changes
+--------------------------------------------------------------------------------
+apigee-service: apigee-lb: pid=11219
+apigee-service: apigee-lb: OK
+apigee-service: apigee-lb: Not running (DEAD)
+apigee-service: apigee-lb: OK
+apigee-configutil: apigee-lb: # OK
+apigee-service: apigee-lb: Not running (NO_LOCKFILE)
+apigee-service: apigee-lb: status=2, continuing
+apigee-service: apigee-lb: OK
+apigee-service: apigee-lb: apigee-lb is running
+
+Starting php-fpm
+--------------------------------------------------------------------------------
+OK: apigee-drupal-devportal started
+
+--------------------------------------------------------------------------------
+END: apigee-drupal-devportal/lib/actions/start 2018-07-02-17.56.53
+--------------------------------------------------------------------------------
+Waiting for Dev Portal to start
+Retrying in 5 sec (1)
+Retrying in 5 sec (2)
+Retrying in 5 sec (3)
+Retrying in 5 sec (4)
+Retrying in 5 sec (5)
+Retrying in 5 sec (6)
+Retrying in 5 sec (7)
+Retrying in 5 sec (8)
+Retrying in 5 sec (9)
+Retrying in 5 sec (10)
+Retrying in 5 sec (11)
+Retrying in 5 sec (12)
+Retrying in 5 sec (13)
+Retrying in 5 sec (14)
+Retrying in 5 sec (15)
+Retrying in 5 sec (16)
+Retrying in 5 sec (17)
+Retrying in 5 sec (18)
+Retrying in 5 sec (19)
+Retrying in 5 sec (20)
+
+Error starting Dev Portal
+Continue anyhow? y/n (y): [2018-07-02 06:10:29 PM] 
+Finished apigee-drupal-devportal setup
+
+[2018-07-02 06:10:29 PM] 
+[2018-07-02 06:10:29 PM] Finished Setup
+[2018-07-02 06:10:29 PM] 
+[2018-07-02 06:10:29 PM] Refer the documentation for provisioning instructions.
+[2018-07-02 06:10:29 PM] Setup wrote to log file: /tmp/setup-root.log
